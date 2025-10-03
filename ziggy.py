@@ -1,8 +1,9 @@
+import os
 import streamlit as st
 from openai import OpenAI
 
 # openai api
-client = OpenAI(api_key="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") 
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"]) 
 
 st.set_page_config(page_title="Ziggy AI", page_icon="🚀")
 st.title("🚀 Ziggy AI: Your Startup Mentor")
